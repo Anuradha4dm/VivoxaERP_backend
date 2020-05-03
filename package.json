@@ -1,33 +1,22 @@
 {
-  "name": "vivoxaerp_backend",
+  "name": "learnes",
   "version": "1.0.0",
-  "description": "backend devs of vivoxa erp",
-  "main": "./src/app.js",
+  "description": "This is the application of REST API backend for the learnes ",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon app"
+    "start": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vivoxalabs/VivoxaERP_backend.git"
-  },
-  "author": "Sandman",
+  "author": "Anuradha",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vivoxalabs/VivoxaERP_backend/issues"
-  },
-  "homepage": "https://github.com/vivoxalabs/VivoxaERP_backend#readme",
   "dependencies": {
-    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-validator": "^6.4.1",
-    "http-status-codes": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.11",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {
-    "jest": "^25.5.3",
     "nodemon": "^2.0.3"
   }
 }

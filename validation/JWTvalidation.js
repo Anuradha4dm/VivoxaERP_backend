@@ -20,7 +20,7 @@ exports.jwtToken = (req, res, next) => {
         
     } catch (error) {
 
-       return  next(error);_
+       return  next(error);
         
     }
 

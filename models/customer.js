@@ -50,22 +50,12 @@ const customer=new Schema({
         require:true
     },
     contactnumber1:{
-        type:String,
+        type:Number,
         require:true
     },
     contactnumber2:{
-        type:String,
+        type:Number,
         require:true
-    },
-    vtraining:{
-        type:Schema.Types.ObjectId,
-        ref:"vtraining",
-        
-    },
-    license:{
-        type:Schema.Types.ObjectId,
-        ref:'license',
-       
     }
 
 },{timestamps:true});

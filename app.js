@@ -6,6 +6,7 @@ const bodypaser=require('body-parser');
 
 //adding routes
 const customerCRUD=require('./routes/customerCURD');
+const vtrainningCURD=require('./routes/vtrainningCURD');
 
 //middlewares
 require('dotenv').config();
@@ -26,10 +27,12 @@ app.use((req, res, next) => {
 
 
 app.use('/learnes',customerCRUD);
+app.use('/learnes',vtrainningCURD);
+
 
 app.use((error,req,res,next)=>{
 
-    if(error.statuscode){
+    if(error.statusCode){
         res.status(error.statuscode).json({
             message:error.message
         });
